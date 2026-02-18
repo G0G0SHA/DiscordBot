@@ -1,0 +1,34 @@
+{
+    "Token": "Token",
+    "ApplicationId": "ID",
+    "VoiceChannelId": "ID",
+    "PlaylistUrls": {
+        "Youtube": "Token",
+        "Spotify": "Token",
+        "SoundCloud": "Token"
+    },
+    "BotSettings": {
+        "CommandPrefix": "/",
+        "MaxRetries": 3,
+        "RetryDelay": 5,
+        "SkipCooldown": 5,
+        "SpotifyClientId": "ID",
+        "SpotifyClientSecret": "ID",
+        "CacheEnabled": true,
+        "CacheDir": "./cache"
+    },
+    "YoutubeDLSettings": {
+        "Format": "bestaudio[ext=webm]/bestaudio/best",
+        "Quality": "0",
+        "UserAgent": "Mozilla/5.0",
+        "CookiesFromBrowser": "chrome",
+        "CookieFile": "cookies.txt",
+        "AudioFormat": "opus",
+        "ThrottledRate": "1500K",
+        "MarkWatched": false
+    },
+    "FFmpegSettings": {
+    "ExecutablePath": "C:/FFmpeg/bin/ffmpeg.exe",
+    "Options": "-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 -loglevel quiet -threads 2 -bufsize 1024k -af aresample=async=1000,asetrate=44100*0.98,atempo=1/0.98,loudnorm=I=-16:LRA=11:TP=-1.5"
+    }
+}
